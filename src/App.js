@@ -5,15 +5,17 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Navbar from "./Navbar";
 import { Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Route exact to="/" component={Home} />
-      <Route exact to="/" component={About} />
-      <Route exact to="/" component={Projects} />
-      <Route exact to="/" component={Contact} />
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/contact" component={Contact} />
     </div>
   );
 }
