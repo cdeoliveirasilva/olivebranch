@@ -7,7 +7,14 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;
