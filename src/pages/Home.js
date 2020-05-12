@@ -1,13 +1,17 @@
 import React from "react";
-import Hero from "./Hero";
+import Hero from "../components/Hero";
+import Carousel from "../components/Carousel";
 
-function Home() {
+function Home(_props) {
   return (
-    <Hero
-      title={"Hey!"}
-      subTitle={"You there!"}
-      text={"I see you over there!"}
-    />
+    <div>
+      <Hero
+        title={"Hey!"}
+        subTitle={"You there!"}
+        text={"I see you over there!"}
+      />
+      <Carousel />
+    </div>
   );
 }
 
