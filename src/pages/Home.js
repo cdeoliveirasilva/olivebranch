@@ -1,10 +1,13 @@
 import React from "react";
+import Hero from "./Hero";
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome to my portfolio!</h1>
-    </div>
+    <Hero
+      title={"Hey!"}
+      subTitle={"You there!"}
+      text={"I see you over there!"}
+    />
   );
 }
 
