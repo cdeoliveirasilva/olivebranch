@@ -17,7 +17,7 @@ class Contact extends React.Component {
   }
 
   handleChange = (e) => {
-    console.log(e);
+    // console.log(e);
 
     const target = e.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
@@ -25,6 +25,14 @@ class Contact extends React.Component {
 
     this.setState({
       [name]: value,
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault(); //prevent default (aka refreshing) after sending email
+    this.setState({
+      disabled: true, //disable the ability to submit emails more than once (on accident or on purpose)
+      // emailSent: true,
     });
   };
 

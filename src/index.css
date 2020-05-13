@@ -37,3 +37,15 @@ code {
   font-size: 16px;
   margin: 0px;
 }
+
+/* feedback messages */
+
+.success-msg {
+  color: green;
+  padding: 10px 15px;
+}
+
+.error-msg {
+  color: #ee4e2e;
+  padding: 10px 15px;
+}
