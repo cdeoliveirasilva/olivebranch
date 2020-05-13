@@ -1,11 +1,20 @@
 import React from "react";
 
-function Contact() {
-  return (
-    <div>
-      <h1>Contact me!</h1>
-    </div>
-  );
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      disabled: false,
+      emailSent: null,
+    };
+  }
+
+  render() {
+    return <p>Contact page works!</p>;
+  }
 }
 
 export default Contact;
