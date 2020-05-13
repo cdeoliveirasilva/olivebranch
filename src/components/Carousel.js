@@ -2,12 +2,12 @@ import React from "react";
 
 import Card from "../components/Card";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-
 import portfolio from "../assets/images/portfolio.png";
 import weatherapi from "../assets/images/weatherapi.jpg";
 import wavegame from "../assets/images/wavegame.jpg";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -15,23 +15,24 @@ class Carousel extends React.Component {
     this.state = {
       items: [
         {
-          id: 1,
+          id: 0,
           title: "React portfolio",
-          subTitle: "React and Bootstrap based portfolio app",
+          subTitle: "Portfolio app built with React and Bootstrap",
           imgSrc: portfolio,
           link: "https://portfolio.domain.com",
           selected: false,
         },
         {
-          id: 2,
+          id: 1,
           title: "Weather API",
-          subTitle: "React for fetching worldwide weather information",
+          subTitle:
+            "API fetch for worldwide weather information built with React",
           imgSrc: weatherapi,
           link: "https://weatherapi.domain.com",
           selected: false,
         },
         {
-          id: 3,
+          id: 2,
           title: "The Wave Game",
           subTitle: "Level-up game built with Java",
           imgSrc: wavegame,
@@ -42,7 +43,7 @@ class Carousel extends React.Component {
     };
   }
 
-  handleCardClick = (id, card) => {
+  handleCardClick = (id) => {
     let items = [...this.state.items];
 
     items[id].selected = items[id].selected ? false : true;
@@ -63,7 +64,7 @@ class Carousel extends React.Component {
       return (
         <Card
           item={item}
-          onClick={(e) => this.handleCardClick(item.id, e)}
+          click={(e) => this.handleCardClick(item.id, e)}
           key={item.id}
         />
       );
