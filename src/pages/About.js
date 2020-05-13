@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Content from "./Content";
+import Content from "../components/Content";
 
 function About(props) {
   return (
