@@ -7,9 +7,9 @@ function Home(_props) {
   return (
     <div>
       <Hero
-        title={"Hey!"}
-        subTitle={"You there!"}
-        text={"I see you over there!"}
+        title={"Olive Branch Translations"}
+        subTitle={""}
+        text={" EN / NL / PT / JP "}
       />
       <Carousel />
     </div>

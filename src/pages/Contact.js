@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Content from "../components/Content";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Axios from "axios";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -30,16 +31,38 @@ class Contact extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault(); //prevent default (aka refreshing) after sending email
+
     this.setState({
       disabled: true, //disable the ability to submit emails more than once (on accident or on purpose)
       // emailSent: true,
     });
+
+    Axios.post("https://localhost:3000/api/email", this.state)
+      .then((res) => {
+        if (res.data.success) {
+          this.setState({
+            disabled: false,
+            emailSent: true,
+          });
+        } else {
+          this.setState({
+            disabled: false,
+            emailSent: true,
+          });
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          disabled: false,
+          emailSent: false,
+        });
+      });
   };
 
   render() {
     return (
       <div>
-        <Hero title={this.props.title} />
+        <Hero title="Get in touch!" />
         <Content>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
@@ -89,10 +112,10 @@ class Contact extends React.Component {
             </Button>
 
             {this.state.emailSent === true && (
-              <p className="d-inline success-msg">Email Sent</p>
+              <p className="d-inline success-msg">Email sent</p>
             )}
             {this.state.emailSent === false && (
-              <p className="d-inline error-msg">Email Sent</p>
+              <p className="d-inline error-msg">Email not sent</p>
             )}
           </Form>
         </Content>

@@ -2,9 +2,9 @@ import React from "react";
 
 import Card from "../components/Card";
 
-import portfolio from "../assets/images/portfolio.png";
-import weatherapi from "../assets/images/weatherapi.jpg";
-import wavegame from "../assets/images/wavegame.jpg";
+import translate from "../assets/images/translate.svg";
+import translation from "../assets/images/translation.svg";
+import subtitles2 from "../assets/images/subtitles2.svg";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -16,27 +16,29 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "React portfolio",
-          subTitle: "Portfolio app built with React and Bootstrap",
-          imgSrc: portfolio,
-          link: "https://portfolio.domain.com",
+          title: "Translation",
+          subTitle:
+            "Translation from/to Portuguese and Japanese to/from English and Dutch.",
+          imgSrc: translate,
+          link: "/",
           selected: false,
         },
         {
           id: 1,
-          title: "Weather API",
+          title: "Website localization",
           subTitle:
-            "API fetch for worldwide weather information built with React",
-          imgSrc: weatherapi,
-          link: "https://weatherapi.domain.com",
+            "Translating an existing website to the local language taking the (business) culture in the target market into consideration.",
+          imgSrc: translation,
+          link: "/",
           selected: false,
         },
         {
           id: 2,
-          title: "The Wave Game",
-          subTitle: "Level-up game built with Java",
-          imgSrc: wavegame,
-          link: "https://wavegame.domain.com",
+          title: "Transcription",
+          subTitle:
+            "Transcription of audio and/or video files, translation also possible.",
+          imgSrc: subtitles2,
+          link: "/",
           selected: false,
         },
       ],

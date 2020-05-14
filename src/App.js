@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
 import Nav from "react-bootstrap/Nav";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,16 +22,16 @@ function App() {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link nav" to="/">
                   Home
                 </Link>
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link nav" to="/about">
                   About
                 </Link>
-                <Link className="nav-link" to="/projects">
-                  Projects
+                <Link className="nav-link nav" to="/services">
+                  Services
                 </Link>
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link nav" to="/contact">
                   Contact
                 </Link>
               </Nav>
@@ -40,7 +40,7 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Content} />
+          <Route exact path="/services" component={Content} />
           <Route exact path="/contact" component={Contact} />
 
           <Footer />
