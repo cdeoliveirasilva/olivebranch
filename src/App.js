@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
 import Nav from "react-bootstrap/Nav";
 import Footer from "./components/Footer";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/services" component={Content} />
+          <Route exact path="/services" component={Services} />
           <Route exact path="/contact" component={Contact} />
 
           <Footer />
