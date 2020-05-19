@@ -33,18 +33,18 @@ body {
 
 .p-card-info {
   margin-top: 20px;
-  max-width: fit-content;
+  max-width: 250px;
   min-height: 100px;
   text-align: center;
 }
 
 .p-card-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #4d8957;
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
-  margin: 0px;
+  margin: 1px;
 }
 
 .p-card-sub {
