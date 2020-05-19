@@ -2,6 +2,9 @@ import React from "react";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
 import { BrowserRouter as Router } from "react-router-dom";
+import translate from "../assets/images/translate.svg";
+import translation from "../assets/images/translation.svg";
+import subtitles2 from "../assets/images/subtitles2.svg";
 
 function Services(props) {
   return (
@@ -10,53 +13,64 @@ function Services(props) {
         <Hero className="/" title="Services" />
 
         <Content className="translation">
-          <h1>Translation</h1>
+          <img src={translate} className="icons" />
+          <h1 className="header2">Translation</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Translation entails much more than translating a text word for word.
+            A good translation requires not only the mastery of the target
+            language and a good knowledge of the different dialects,
+            punctuation, grammar, axioms, slang, variants, styles, jargon and
+            euphemisms. It also demands great familiarity with the (social as
+            well as business) culture of the target audience. As a
+            native-speaker of Brazilian Portuguese, a near-native speaker of
+            English and Dutch, and a business-level proficiency in Japanese, I
+            offer (professional) translations from/to English, Dutch and
+            Brazilian Portuguese, and B1-B2 level translations to/from Japanese.
+          </p>
+          <p>
+            <b>Document types:</b> company/product presentations, activity
+            reports, annual reports, brochures, correspondence, guides, media
+            kits, partner agreements, press releases, surveys, documents for age
+            rating classification (PEGI, CERO, Classificação Indicativa),
+            promo's, advertisements
           </p>
         </Content>
         <br />
 
         <Content className="localization">
-          <h1>Localization</h1>
+          <img src={translation} className="icons" />
+          <h1 className="header2">Localization</h1>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            Maybe you have found yourself in need of localization (or should I
+            say 'localisation'?), either for your website or for your mobile
+            application, or perhaps for a game you're working on developing.
+            Fear not! American English or British English, Japan's Hokkaido-ben
+            or Osaka-ben, I'll even take your side on the "biscoito ou bolacha"
+            debate - whatever it may be, I'm able to localize all your needs
+            (...well, almost all). On top of that, I'm self-taught in basic
+            programming - how about this fancy webside, eh? - and as such I'm
+            able to deal with all the programming that goes under the hood, so
+            you don't have to worry about that.
           </p>
         </Content>
         <br />
 
         <Content className="transcription">
-          <h1>Transcription</h1>
+          <img src={subtitles2} className="icons" />
+          <h1 className="header2">Transcription</h1>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32.
+            Manual transcription of one hour of audio can easily take up 4 to 9
+            hours of work, and anyone who's a little familiar with the arduous
+            process of transcribing would gladly hand it over to someone else if
+            they could. I will gladly be the person who takes that load from
+            you. I'm comfortable with all Brazilian Portuguese, English, Dutch
+            and Japanese accents and dialects. Verbatim or edited
+            transcriptions? "Um..." No problem!
+          </p>
+          <p>
+            <b>Document types:</b> business meetings, conference calls,
+            e-courses, interviews, lectures, oral narratives, podcasts, vlogs,
+            webcasts, YouTube videos
           </p>
         </Content>
       </Router>

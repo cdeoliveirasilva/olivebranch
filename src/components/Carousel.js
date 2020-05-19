@@ -17,8 +17,7 @@ class Carousel extends React.Component {
         {
           id: 0,
           title: "Translation",
-          subTitle:
-            "Translation from/to Portuguese and Japanese to/from English and Dutch.",
+          subTitle: "",
           imgSrc: translate,
           link: "/Services",
           selected: false,
@@ -26,8 +25,7 @@ class Carousel extends React.Component {
         {
           id: 1,
           title: "Website localization",
-          subTitle:
-            "Translating an existing website to the local language taking the (business) culture in the target market into consideration.",
+          subTitle: "",
           imgSrc: translation,
           link: "/Services",
           selected: false,
@@ -35,8 +33,7 @@ class Carousel extends React.Component {
         {
           id: 2,
           title: "Transcription",
-          subTitle:
-            "Transcription of audio and/or video files, translation also possible.",
+          subTitle: "",
           imgSrc: subtitles2,
           link: "/Services",
           selected: false,
