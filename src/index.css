@@ -11,28 +11,25 @@ body {
 /* text css */
 
 a {
-  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000000;
 }
 
 a:link {
-  font-size: 15px;
   color: #4d8957;
-  text-decoration: none;
 }
 
 a:visited {
   color: #266038;
-  text-decoration: none;
 }
 
 a:hover {
   color: #266038;
-  text-decoration: none;
 }
 
 a:active {
   color: #266038;
-  text-decoration: none;
 }
 
 /* hero css */
