@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function About(props) {
   return (

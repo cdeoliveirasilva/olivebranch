@@ -17,10 +17,8 @@ class Contact extends React.Component {
     };
   }
 
-  handleChange = (e) => {
-    // console.log(e);
-
-    const target = e.target;
+  handleChange = (event) => {
+    const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
 
@@ -29,15 +27,16 @@ class Contact extends React.Component {
     });
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault(); //prevent default (aka refreshing) after sending email
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(event.target);
 
     this.setState({
-      disabled: true, //disable the ability to submit emails more than once (on accident or on purpose)
-      // emailSent: true,
+      disabled: true,
     });
 
-    Axios.post("https://localhost:3000/api/email", this.state)
+    Axios.post("http://localhost:3030/api", this.state)
       .then((res) => {
         if (res.data.success) {
           this.setState({
@@ -47,11 +46,13 @@ class Contact extends React.Component {
         } else {
           this.setState({
             disabled: false,
-            emailSent: true,
+            emailSent: false,
           });
         }
       })
       .catch((err) => {
+        console.log(err);
+
         this.setState({
           disabled: false,
           emailSent: false,
