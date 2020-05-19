@@ -65,11 +65,17 @@ class Contact extends React.Component {
       <div>
         <Hero title="Get in touch!" />
         <Content>
-          <Form onSubmit={this.handleSubmit}>
+          <div>
+            <p>
+              Get in touch with me either through the contact form below,
+              <br />
+              or through email at <b>ca.oliveirasilva@hotmail.com</b>
+            </p>
+          </div>
+          <br />
+          <Form className="ml-7 col-12 formBody" onSubmit={this.handleSubmit}>
             <Form.Group>
-              <Form.Label className="/" htmlFor="full-name">
-                Full name
-              </Form.Label>
+              <Form.Label htmlFor="full-name">Full name</Form.Label>
               <Form.Control
                 id="full-name"
                 name="name"
@@ -90,10 +96,20 @@ class Contact extends React.Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
+            <div class="form-group">
+              <label for="service-select">Choose a subject</label>
+              <select class="form-control" id="service-select">
+                <option>Translation</option>
+                <option>Localization</option>
+                <option>Transcription</option>
+                <option>Other</option>
+              </select>
+            </div>
             <Form.Group>
               <Form.Label className="/" htmlFor="message">
                 Message
               </Form.Label>
+
               <Form.Control
                 id="message"
                 name="message"
@@ -103,13 +119,14 @@ class Contact extends React.Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
+
             <Button
               className="d-inline-block"
               varient="primary"
               type="submit"
               disabled={this.state.disabled}
             >
-              Send
+              Submit
             </Button>
 
             {this.state.emailSent === true && (

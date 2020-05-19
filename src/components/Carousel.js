@@ -20,7 +20,7 @@ class Carousel extends React.Component {
           subTitle:
             "Translation from/to Portuguese and Japanese to/from English and Dutch.",
           imgSrc: translate,
-          link: "/",
+          link: "/Services",
           selected: false,
         },
         {
@@ -29,7 +29,7 @@ class Carousel extends React.Component {
           subTitle:
             "Translating an existing website to the local language taking the (business) culture in the target market into consideration.",
           imgSrc: translation,
-          link: "/",
+          link: "/Services",
           selected: false,
         },
         {
@@ -38,7 +38,7 @@ class Carousel extends React.Component {
           subTitle:
             "Transcription of audio and/or video files, translation also possible.",
           imgSrc: subtitles2,
-          link: "/",
+          link: "/Services",
           selected: false,
         },
       ],

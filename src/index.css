@@ -8,7 +8,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* text style */
+/* text css */
+
+a {
+  color: #000;
+}
+
+a:link {
+  font-size: 15px;
+  color: #4d8957;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #266038;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #266038;
+  text-decoration: none;
+}
+
+a:active {
+  color: #266038;
+  text-decoration: none;
+}
 
 /* hero css */
 
@@ -62,6 +87,13 @@ body {
 .error-msg {
   color: #ee4e2e;
   padding: 10px 15px;
+}
+
+/* form css */
+
+.formBody {
+  max-width: 500px;
+  justify-content: center;
 }
 
 /* footer css */
