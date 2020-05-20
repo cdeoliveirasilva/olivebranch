@@ -11,14 +11,9 @@ function Hero(props) {
         <Row className="justify-content-center py-5">
           <Col md={8} sm={6}>
             {props.title && (
-              <h1 className="display-4 font-weight-bolder">{props.title}</h1>
+              <h1 className="display-4 text-uppercase">{props.title}</h1>
             )}
-            {props.subTitle && (
-              <h2 className="display-4 font-weight-light">{props.subTitle}</h2>
-            )}
-            {props.text && (
-              <h3 className="lead font-weight-light">{props.text}</h3>
-            )}
+            {props.text && <h3 className="header3">{props.text}</h3>}
           </Col>
         </Row>
       </Container>
@@ -27,3 +22,6 @@ function Hero(props) {
 }
 
 export default Hero;
+
+// maybe later:
+// {props.subTitle && <h2 className="display-6">{props.subTitle}</h2>}

@@ -18,7 +18,10 @@ function App() {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <NavbarBrand>C. de Oliveira Silva</NavbarBrand>
+            <NavbarBrand>
+              C. de Oliveira Silva <br />
+              EN / NL / PT / JP
+            </NavbarBrand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">

@@ -8,8 +8,8 @@ function Home(_props) {
     <div>
       <Hero
         title={"Olive Branch Translations"}
-        subTitle={""}
-        text={" EN / NL / PT / JP "}
+        subTitle={"add something later"}
+        text={" * This website is still in development mode."}
       />
       <Carousel />
     </div>
