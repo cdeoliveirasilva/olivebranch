@@ -73,7 +73,7 @@ class Contact extends React.Component {
             </p>
           </div>
           <br />
-          <Form className="ml-7 col-12 formBody" onSubmit={this.handleSubmit}>
+          <Form className="ml-7 col-12" onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label htmlFor="full-name">Full name</Form.Label>
               <Form.Control
