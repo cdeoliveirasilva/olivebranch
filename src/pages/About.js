@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import Content from "../components/Content";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import profileImg from "../assets/images/profile-picture.jpg";
+
 function About(props) {
   return (
     <div>
@@ -13,6 +15,7 @@ function About(props) {
         />
 
         <Content className="/">
+          <img src={profileImg} className="profileImg" alt="/" />
           <p>
             Multi-skilled and reliable translator and transcriber with almost 2
             years of professional experience. An enthusiastic learner who's able

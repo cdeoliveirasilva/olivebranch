@@ -121,8 +121,8 @@ class Contact extends React.Component {
             </Form.Group>
 
             <Button
-              className="d-inline-block"
-              varient="primary"
+              className="submitBtn"
+              variant="primary"
               type="submit"
               disabled={this.state.disabled}
             >

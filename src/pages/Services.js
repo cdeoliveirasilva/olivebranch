@@ -13,7 +13,7 @@ function Services(props) {
         <Hero className="/" title="Services" />
 
         <Content className="translation">
-          <img src={translate} className="icons" />
+          <img src={translate} className="icons" alt="/" />
           <h1 className="header2">Translation</h1>
           <p>
             Translation entails much more than translating a text word for word.
@@ -38,7 +38,7 @@ function Services(props) {
         <br />
 
         <Content className="localization">
-          <img src={translation} className="icons" />
+          <img src={translation} className="icons" alt="/" />
           <h1 className="header2">Localization</h1>
           <p>
             Maybe you have found yourself in need of localization (or should I
@@ -56,7 +56,7 @@ function Services(props) {
         <br />
 
         <Content className="transcription">
-          <img src={subtitles2} className="icons" />
+          <img src={subtitles2} className="icons" alt="/" />
           <h1 className="header2">Transcription</h1>
           <p>
             Manual transcription of one hour of audio can easily take up 4 to 9

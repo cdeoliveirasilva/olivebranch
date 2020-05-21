@@ -12,6 +12,8 @@ import Nav from "react-bootstrap/Nav";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
 
+import olivebranchlogo from "./assets/images/olivebranch-logo.png";
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +21,8 @@ function App() {
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <NavbarBrand>
-              C. de Oliveira Silva <br />
+              <img src={olivebranchlogo} className="logo" alt="/" />
+              <br />
               EN / NL / PT / JP
             </NavbarBrand>
 

@@ -1,20 +1,20 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+import { MDBContainer, MDBFooter } from "mdbreact";
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="footer">
-      <Container fluid={true}>
-        <Row className="border-top p-2">
-          <Col className="p-2" md={4} sm={6}>
-            @ 2020 | Olive Branch Translations. All rights reserved.
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+    <MDBFooter className="footer font-small darken-3 pt-0">
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright:{" "}
+          www.olivebranch-translations.com
+        </MDBContainer>
+      </div>
+    </MDBFooter>
   );
-}
+};
 
 export default Footer;
